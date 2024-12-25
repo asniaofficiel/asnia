@@ -1,0 +1,101 @@
+/* General styles for body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #fff;
+    background-color: #000;
+}
+
+/* Header styles */
+header {
+    background: #8b0000; /* Dark red */
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+header .logo img {
+    width: 120px; /* Logo size */
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Section styles */
+section {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+#videos h2 {
+    color: #8b0000;
+    margin-bottom: 1rem;
+}
+
+/* Video gallery styles */
+.video-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.video iframe {
+    width: 100%;
+    max-width: 320px;
+    height: 180px;
+    border: 2px solid #8b0000;
+    border-radius: 8px;
+}
+
+/* Footer styles */
+footer {
+    background: #8b0000;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.social-icons {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #550000;
+    transform: scale(1.2);
+}
+
+/* Responsive design for smaller devices */
+@media (max-width: 768px) {
+    .video iframe {
+        max-width: 90%;
+        height: auto;
+    }
+
+    header .logo img {
+        width: 100px; /* Adjust logo size for smaller screens */
+    }
+}
